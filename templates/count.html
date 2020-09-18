@@ -1,0 +1,15 @@
+<h1>There are {{count}} words in your text</h1>
+<a href="{% url 'home' %}">Start Again</a>
+<br/>
+<h1>Your text:</h1>
+{{fulltext}}
+<br/>
+
+<h1>Word Count:</h1>
+
+{% for i,j in sorteddict %}
+<br/>
+{{i}} -> {{j}}
+<br/>
+
+{% endfor %}
